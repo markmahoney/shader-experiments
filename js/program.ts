@@ -34,7 +34,7 @@ const drawVertexCanvas = (gl: WebGLRenderingContextStrict, shaderProgram: WebGLP
     const gl = canvas.getContext("webgl") as any as WebGLRenderingContextStrict;
     const shaders = await getShaders(gl, [
         ['shaders/default.vert', gl.VERTEX_SHADER],
-        ['shaders/experiment3.frag', gl.FRAGMENT_SHADER],
+        ['shaders/bookofshaders/02_line.frag', gl.FRAGMENT_SHADER],
     ]);
     const shaderProgram = buildProgram(gl, shaders);
 
